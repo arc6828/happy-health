@@ -20,4 +20,25 @@ laravel new happy-health
 php artisan install:api
 php artisan ziggy:generate
 ```
+## after clone
+```
+composer install
+npm install
+copy .env.example .env
+php artisan key:generate
+php artisan migrate
+```
 
+## development run server start
+```
+composer run dev
+composer dev:ssr
+```
+
+## production run build
+```
+git pull
+composer install
+npm install
+npm run build
+```
